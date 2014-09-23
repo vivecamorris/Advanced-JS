@@ -12,6 +12,8 @@ $(document).ready(function() {
       // find the title, permalink, and upvote count
       // Then create HTML elements with jQuery (like in line 9)
       // and append them to the #list element. 
+        $(elem).append("<p>");
+        $(elem).append("<a href= http://www.reddit.com/" + story.permalink + ">" + story.title + "</a>")
       $("#list").append(elem);
       // Look at the JS console in Chrome to see what story looks like
       console.log(story);
